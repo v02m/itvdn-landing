@@ -4,18 +4,19 @@
   "description": "This is langing tutorial for ITVDN students",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sergeyamator/itvdn-landing.git"
+    "url": "git+https://github.com/romannt/itvdn-landing.git"
   },
   "author": "Sergey Rubets",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sergeyamator/itvdn-landing/issues"
+    "url": "https://github.com/romannt/itvdn-landing/issues"
   },
-  "homepage": "https://github.com/sergeyamator/itvdn-landing#readme",
+  "homepage": "https://github.com/romannt/itvdn-landing#readme",
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "github:gulpjs/gulp#4.0",
