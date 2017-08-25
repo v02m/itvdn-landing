@@ -2,3 +2,16 @@
   max-width: 1024px;
   margin: auto;
 }
+
+// Применяется для скрытия формы
+// Скрытые элементы не видят поисковые системы
+.is-hidden {
+  display: none!important;
+}
+
+// Применяется для скрытия текста кнопок в footer
+// Текст не отображается, но виден поисковикам
+.visually-hidden {
+  text-indent: -9999px;
+  font-size: 0;
+}
