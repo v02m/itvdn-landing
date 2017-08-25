@@ -1,0 +1,113 @@
+.form-section {
+  padding: 100px 0 110px 0;
+  color: #fff;
+  background-color: #1287bf;
+
+  .title {
+    margin-bottom: 12px;
+  }
+
+  .title__header {
+    font-size: 2.25rem;
+  }
+
+  .title__text {
+    font-size: 1.25rem;
+  }
+
+  // Круг для кнопки со стрелкой вниз
+  .btn-down {
+    position: relative;
+    margin: auto auto 20px;
+    width: 65px;
+    height: 65px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+
+  // Стрелка вниз внутри кнопки
+  .arrow-down {
+    @include centerer-xy();
+
+    .fa {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.form {
+  position: relative; // Кнопку "закрыть" позиционируем абсолютно относительно формы
+  width: 67%;
+  margin: auto; // Центрирует форму по горизонтали
+  padding: 50px 50px 66px 50px;
+  border-radius: 3px;
+  color: #828282;
+  text-align: center;
+  background-color: #fff;
+
+  &-container {
+    padding-top: 30px;
+  }
+
+  // Треугольник
+  &:before {
+    @include centerer-x();
+
+    content: '';
+    border: 30px solid transparent;
+    border-bottom: 30px solid #ffffff;
+    top: -59px; // абсолютное позиционирование относительно формы
+  }
+
+  // Кнопка "закрыть"
+  &__close-button {
+    position: absolute; // абсолютное позиционирование относительно формы
+    right: -16px;
+    top: -22px;
+    border-radius: 50%; // делаем кнопку круглой
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    background: #de2b24;
+    transition: 0.3s;
+    // Делаем фон светлее на 10% с задержкой 0.3 сек. при наведении мыши на кнопку
+    &:hover {
+      background: lighten(#de2b24, 10%);
+    }
+  }
+
+  &__text {
+    margin-bottom: 33px;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  // Блок с полями
+  &__fields {
+    margin-bottom: 36px;
+  }
+
+  // Поле
+  &__input {
+    width: 76%;
+    display: block; // Каждое поле на новой строке
+    margin: auto auto 8px auto;
+    padding: 18px 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    // Выбранному полю рисуем тень
+    &:focus {
+      box-shadow: 0 0 8px 1px rgba(0,0,0,0.5);
+    }
+  }
+
+  // Кнопка "SUBMIT NOW"
+  .button {
+    padding: 15px 30px;
+    border: none; // Убираем гнаницу кнопки, которая отрисовывается по-умолчанию
+  }
+}
