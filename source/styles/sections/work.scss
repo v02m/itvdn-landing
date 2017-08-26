@@ -3,9 +3,14 @@
   background-color: #de2b24;
   color: #fff;
 
+  @media (max-width: 985px){
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; // При уменьшении ширины окна в браузере разрешаем переносить блоки на следующую строку
     justify-content: center;
     padding: 0;
   }
