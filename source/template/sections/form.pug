@@ -5,7 +5,7 @@ section.form-section
       .title__text Enter your details below
 
     // Вложенность можно указывать отступами или в одной строке с помощью двоеточий
-    .btn-down: a.arrow-down: i.fa.fa-angle-down
+    .btn-down: a.arrow-down(href="form.html"): i.fa.fa-angle-down
 
     .form-container.is-hidden
       form(method="post" action="#").form
@@ -15,8 +15,9 @@ section.form-section
           for your business + Learn How To Use Google and Facebook to get 5000% ROI or more
 
         .form__fields
-          input.form__input(type="text" placeholder="Your Name")
-          input.form__input(type="text" placeholder="Contact Number")
-          input.form__input(type="text" placeholder="Contact Name")
+          input.form__input(type="name" placeholder="Your Name" data-valid="required")
+          input.form__input(type="email" placeholder="Email" data-valid="required" data-email)
+          input.form__input(type="phone" placeholder="Contact Number" data-valid="required" data-number)
 
-        button(type="submit").button.button--text-uppercase.button--red Submit now
+        //button(type="submit").button.button--text-uppercase.button--red Submit now
+        button.button.button--text-uppercase.button--red Submit now
