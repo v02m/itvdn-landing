@@ -34,10 +34,11 @@
   if (nav) {
     nav.addEventListener('click', function (e) {
       var target = e.target;
-      if (target.tagName.toLocaleLowerCase() !== 'a')
+      if (target.tagName.toLowerCase() !== 'a') {
         return;
+      }
       e.preventDefault();
       ITVDN.navigation.toggleToActiveLink(target);
-    })
+    });
   }
 }());
