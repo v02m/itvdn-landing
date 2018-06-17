@@ -15,10 +15,16 @@
 # Для старта проекта:
 
 * Склонировать репозитарий:
-> git clone https://github.com/romannt/itvdn-landing.git
+> git clone https://github.com/v02m/itvdn-landing.git
 
 * Запустить команду npm install.
 Данная команда установит все пакеты, указанные в файле package.json,
 а также все их зависимости.
 
 
+> echo "# startpug" >> README.md
+> git init
+> git add README.md
+> git commit -m "first commit"
+> git remote add origin https://github.com/v02m/startpug.git
+> git push -u origin master
